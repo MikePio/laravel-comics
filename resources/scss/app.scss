@@ -1,20 +1,9 @@
-@import "~bootstrap/scss/bootstrap";
+// @import "~bootstrap/scss/bootstrap";
 
-.row {
-    > * {
-        height: 100vh;
+// Nel main.scss si inseriscono tutti gli import
+// in questo modo basta importare main css nello style di ogni file.vue es. @use '../scss/main.scss' as *;
+@import './partials/general';
+@import './partials/var';
 
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        color: lightcoral;
-        background-color: aquamarine;
-        background-image: url('../img/laravel.png');
-        background-size: 50px 50px;
-    }
-}
-
-img {
-    max-height: 150px;
-}
+// Style di ogni view
+@import './partials/header';
