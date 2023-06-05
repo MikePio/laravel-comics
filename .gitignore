@@ -1,0 +1,51 @@
+# ORIGINAL FILE
+/node_modules
+/public/build
+/public/hot
+/public/storage
+/storage/*.key
+/vendor
+.env
+.env.backup
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+/.idea
+/.vscode
+package-lock.json
+
+#ADDED BY ME
+
+# File generati da Laravel
+/node_modules
+/public/hot
+/public/storage
+/storage/*.key
+/vendor
+
+# Cache e file generati dal framework
+/bootstrap/cache/
+/storage/*.php
+/storage/*.zip
+/storage/*.gz
+/storage/*.tar
+/storage/*.rar
+
+# File specifici per l'editor di codice
+/.idea
+/.vscode
+
+# File di log
+/storage/logs/*.log
+
+# Altri file
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+.env
+.env.*
+.phpunit.result.cache
+
