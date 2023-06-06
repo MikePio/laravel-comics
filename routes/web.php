@@ -15,11 +15,22 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
   $header_nav = config('header-nav');
-  return view('home', compact('header_nav'));
+  $comics_cards = config('comics');
+  $menu_cta = config('container-cta.links_cta');
+  // $footer_links = config('footer-top');
+  // dump($footer_links);
+  // // ottengo primo valore di name
+  // $footer_links_top = config('footer-top');
+  // $name_dcComics = $footer_links_top[0]['dcComics'][0]['name'];
+  // dump($name_dcComics);
+  $footer_links_top = config('footer-top');
+  $footer_links_bottom = config('footer-bottom.links_footer_bottom');
+  return view('home', compact('header_nav', 'comics_cards', 'menu_cta', 'footer_links_top', 'footer_links_bottom'));
 })->name('comics');
 
 Route::get('/characters', function () {
     $header_nav = config('header-nav');
+
     return view('characters', compact('header_nav') );
 })->name('characters');
 
@@ -62,6 +73,3 @@ Route::get('/shop', function () {
     $header_nav = config('header-nav');
     return view('no_page', compact('header_nav') );
 })->name('shop');
-
-
-//* CREA UN PAGINA CHE TI PORTI A PAGINA NON DISPONIBILE

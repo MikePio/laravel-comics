@@ -8,32 +8,50 @@
 
                         <ul>
                             <h4>DC COMICS</h4>
+                            {{-- * STAMPATI DINAMICAMENTE TUTTI I LINK --}}
+                            @foreach ($footer_links_top[0]['dcComics'] as $item)
+                              <li><a href="{{ $item['url'] }}">{{ $item['name'] }}</a></li>
+                            @endforeach
+
                             {{-- <li v-for="(listItem, index) in linksFooterTop[0].dcComics" :key="index"><a
                                     :href="`${listItem.url}`">{{ listItem . name }}</a></a></li> --}}
-                            <li><a>Characters</a></li>
+
+                            {{-- <li><a>Characters</a></li>
                             <li><a>Comics</a></li>
                             <li><a>Movies</a></li>
                             <li><a>TV</a></li>
                             <li><a>Games</a></li>
                             <li><a>Videos</a></li>
-                            <li><a>News</a></li>
+                            <li><a>News</a></li> --}}
                         </ul>
 
                         <ul>
                             <h4>SHOP</h4>
+                            {{-- * STAMPATI DINAMICAMENTE TUTTI I LINK --}}
+                            @foreach ($footer_links_top[1]['shop'] as $item)
+                              <li><a href="{{ $item['url'] }}">{{ $item['name'] }}</a></li>
+                            @endforeach
+
                             {{-- <li v-for="(listItem, index) in linksFooterTop[1].shop" :key="index"><a
                                     :href="`${listItem.url}`">{{ listItem . name }}</a></a></li> --}}
-                            <li><a>Shop DC</a></li>
-                            <li><a>Shop DC Collectibles</a></li>
+
+                            {{-- <li><a>Shop DC</a></li>
+                            <li><a>Shop DC Collectibles</a></li> --}}
                         </ul>
                     </div>
 
                     <div class="col">
                         <ul>
                             <h4>DC</h4>
+                            {{-- * STAMPATI DINAMICAMENTE TUTTI I LINK --}}
+                            @foreach ($footer_links_top[2]['dc'] as $item)
+                              <li><a href="{{ $item['url'] }}">{{ $item['name'] }}</a></li>
+                            @endforeach
+
                             {{-- <li v-for="(listItem, index) in linksFooterTop[2].dc" :key="index"><a
                                     :href="`${listItem.url}`">{{ listItem . name }}</a></a></li> --}}
-                            <li><a>Terms Of Use</a></li>
+
+                            {{-- <li><a>Terms Of Use</a></li>
                             <li><a>Privacy policy (New)</a></li>
                             <li><a>Ad Choices</a></li>
                             <li><a>Advertising</a></li>
@@ -43,20 +61,26 @@
                             <li><a>CPSC Certificates</a></li>
                             <li><a>Ratings</a></li>
                             <li><a>Shop Help</a></li>
-                            <li><a>Contact Us</a></li>
+                            <li><a>Contact Us</a></li> --}}
                         </ul>
                     </div>
 
                     <div class="col">
                         <ul>
                             <h4>SITES</h4>
+                            {{-- * STAMPATI DINAMICAMENTE TUTTI I LINK --}}
+                            @foreach ($footer_links_top[3]['sites'] as $item)
+                              <li><a href="{{ $item['url'] }}">{{ $item['name'] }}</a></li>
+                            @endforeach
+
                             {{-- <li v-for="(listItem, index) in linksFooterTop[3].sites" :key="index"><a
                                 :href="`${listItem.url}`">{{ listItem . name }}</a></a></li> --}}
-                            <li><a>DC</a></li>
+
+                            {{-- <li><a>DC</a></li>
                             <li><a>MAD Magazine</a></li>
                             <li><a>DC Kids</a></li>
                             <li><a>DC Universe</a></li>
-                            <li><a>DC Power Visa</a></li>
+                            <li><a>DC Power Visa</a></li> --}}
                         </ul>
                     </div>
 
@@ -77,14 +101,19 @@
             <div class="container-bottom-right row align-items-center">
                 <h3>FOLLOW US</h3>
                 <ul class="d-flex">
+                  @foreach ($footer_links_bottom as $footer_link_bottom)
+                    <li><a><img src="{{ Vite::asset('resources/assets/img/'.$footer_link_bottom['img']) }}"  alt="img-footer-down"></a></li>
+                  @endforeach
+
                     {{-- <li v-for="(linkFooterBottom, index) in linksFooterBottom" :key="index"><a
                             :href="`${linkFooterBottom.url}`"><img :src="`${linkFooterBottom.img}`"
                             :alt="`${linkFooterBottom.name}`"></a></a></li> --}}
-                        <li><a><img src="{{ Vite::asset('resources/assets/img/footer-facebook.png') }}"  alt="img-footer-down"></a></li>
+
+                        {{-- <li><a><img src="{{ Vite::asset('resources/assets/img/footer-facebook.png') }}"  alt="img-footer-down"></a></li>
                         <li><a><img src="{{ Vite::asset('resources/assets/img/footer-twitter.png') }}" alt="img-footer-down"></a></li>
                         <li><a><img src="{{ Vite::asset('resources/assets/img/footer-youtube.png') }}" alt="img-footer-down"></a></li>
                         <li><a><img src="{{ Vite::asset('resources/assets/img/footer-pinterest.png') }}" alt="img-footer-down"></a></li>
-                        <li><a><img src="{{ Vite::asset('resources/assets/img/footer-periscope.png') }}" alt="img-footer-down"></a></li>
+                        <li><a><img src="{{ Vite::asset('resources/assets/img/footer-periscope.png') }}" alt="img-footer-down"></a></li> --}}
                 </ul>
             </div>
 
