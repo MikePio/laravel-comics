@@ -1,5 +1,5 @@
 <?php
-​
+
 return [
   [
     'dcComics' => [
@@ -121,3 +121,5 @@ return [
     ]
     ]
 ];
+
+?>

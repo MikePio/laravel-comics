@@ -1,7 +1,6 @@
 <?php
-​
+
 return [
-  'header_menu' => [
     [
       'name' => 'characters',
       'url' => 'characters'
@@ -42,6 +41,8 @@ return [
       'name'=> 'shop',
       'url'=> 'shop',
     ]
-  ]
 
 ];
+
+
+?>

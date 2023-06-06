@@ -1,5 +1,5 @@
 <?php
-​
+
 return [
   'links_footer_bottom' => [
     [
@@ -30,3 +30,5 @@ return [
   ]
 
 ];
+
+?>
