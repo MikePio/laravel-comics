@@ -25,40 +25,43 @@ Route::get('/characters', function () {
 
 Route::get('/movies', function () {
     $header_nav = config('header-nav');
-    return view('movies', compact('header_nav') );
+    return view('no_page', compact('header_nav') );
 })->name('movies');
 
 Route::get('/tv', function () {
     $header_nav = config('header-nav');
-    return view('tv', compact('header_nav') );
+    return view('no_page', compact('header_nav') );
 })->name('tv');
 
 Route::get('/games', function () {
     $header_nav = config('header-nav');
-    return view('games', compact('header_nav') );
+    return view('no_page', compact('header_nav') );
 })->name('games');
 
 Route::get('/collectibles', function () {
     $header_nav = config('header-nav');
-    return view('collectibles', compact('header_nav') );
+    return view('no_page', compact('header_nav') );
 })->name('collectibles');
 
 Route::get('/videos', function () {
     $header_nav = config('header-nav');
-    return view('videos', compact('header_nav') );
+    return view('no_page', compact('header_nav') );
 })->name('videos');
 
 Route::get('/fans', function () {
     $header_nav = config('header-nav');
-    return view('fans', compact('header_nav') );
+    return view('no_page', compact('header_nav') );
 })->name('fans');
 
 Route::get('/news', function () {
     $header_nav = config('header-nav');
-    return view('news', compact('header_nav') );
+    return view('no_page', compact('header_nav') );
 })->name('news');
 
 Route::get('/shop', function () {
     $header_nav = config('header-nav');
-    return view('shop', compact('header_nav') );
+    return view('no_page', compact('header_nav') );
 })->name('shop');
+
+
+//* CREA UN PAGINA CHE TI PORTI A PAGINA NON DISPONIBILE
