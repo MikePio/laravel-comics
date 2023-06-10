@@ -30,46 +30,72 @@ Route::get('/', function () {
 
 Route::get('/characters', function () {
     $header_nav = config('header-nav');
+    $footer_links_top = config('footer-top');
+    $footer_links_bottom = config('footer-bottom.links_footer_bottom');
 
-    return view('characters', compact('header_nav') );
+    return view('characters', compact('header_nav', 'footer_links_top', 'footer_links_bottom') );
 })->name('characters');
 
 Route::get('/movies', function () {
     $header_nav = config('header-nav');
-    return view('no_page', compact('header_nav') );
+    $footer_links_top = config('footer-top');
+    $footer_links_bottom = config('footer-bottom.links_footer_bottom');
+
+    return view('no_page', compact('header_nav', 'footer_links_top', 'footer_links_bottom') );
 })->name('movies');
 
 Route::get('/tv', function () {
     $header_nav = config('header-nav');
-    return view('no_page', compact('header_nav') );
+    $footer_links_top = config('footer-top');
+    $footer_links_bottom = config('footer-bottom.links_footer_bottom');
+
+    return view('no_page', compact('header_nav', 'footer_links_top', 'footer_links_bottom') );
 })->name('tv');
 
 Route::get('/games', function () {
     $header_nav = config('header-nav');
-    return view('no_page', compact('header_nav') );
+    $footer_links_top = config('footer-top');
+    $footer_links_bottom = config('footer-bottom.links_footer_bottom');
+
+    return view('no_page', compact('header_nav', 'footer_links_top', 'footer_links_bottom') );
 })->name('games');
 
 Route::get('/collectibles', function () {
     $header_nav = config('header-nav');
-    return view('no_page', compact('header_nav') );
+    $footer_links_top = config('footer-top');
+    $footer_links_bottom = config('footer-bottom.links_footer_bottom');
+
+    return view('no_page', compact('header_nav', 'footer_links_top', 'footer_links_bottom') );
 })->name('collectibles');
 
 Route::get('/videos', function () {
     $header_nav = config('header-nav');
-    return view('no_page', compact('header_nav') );
+    $footer_links_top = config('footer-top');
+    $footer_links_bottom = config('footer-bottom.links_footer_bottom');
+
+    return view('no_page', compact('header_nav', 'footer_links_top', 'footer_links_bottom') );
 })->name('videos');
 
 Route::get('/fans', function () {
     $header_nav = config('header-nav');
-    return view('no_page', compact('header_nav') );
+    $footer_links_top = config('footer-top');
+    $footer_links_bottom = config('footer-bottom.links_footer_bottom');
+
+    return view('no_page', compact('header_nav', 'footer_links_top', 'footer_links_bottom') );
 })->name('fans');
 
 Route::get('/news', function () {
     $header_nav = config('header-nav');
-    return view('no_page', compact('header_nav') );
+    $footer_links_top = config('footer-top');
+    $footer_links_bottom = config('footer-bottom.links_footer_bottom');
+
+    return view('no_page', compact('header_nav', 'footer_links_top', 'footer_links_bottom') );
 })->name('news');
 
 Route::get('/shop', function () {
     $header_nav = config('header-nav');
-    return view('no_page', compact('header_nav') );
+    $footer_links_top = config('footer-top');
+    $footer_links_bottom = config('footer-bottom.links_footer_bottom');
+
+    return view('no_page', compact('header_nav', 'footer_links_top', 'footer_links_bottom') );
 })->name('shop');
