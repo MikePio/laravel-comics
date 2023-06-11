@@ -28,7 +28,7 @@ Route::get('/', function () {
   return view('home', compact('header_nav', 'comics_cards', 'menu_cta', 'footer_links_top', 'footer_links_bottom'));
 })->name('comics');
 
-Route::get('/detail_card/{slug}', function($slug) {
+Route::get('/detail_card_page/{slug}', function($slug) {
   $header_nav = config('header-nav');
   $menu_cta = config('container-cta.links_cta');
   $footer_links_top = config('footer-top');
@@ -37,10 +37,10 @@ Route::get('/detail_card/{slug}', function($slug) {
   //* rotta per la PAGINA DI DETTAGLIO
   $comics_cards = config('comics');
   $card_array = array_filter($comics_cards, fn($item) => $item['slug'] == $slug );
-  $detail_page = $card_array[array_key_first($card_array)];
+  $detail_card = $card_array[array_key_first($card_array)];
 
-  return view('detail_card', compact('header_nav', 'detail_page', 'menu_cta', 'footer_links_top', 'footer_links_bottom'));
-})->name('detail_card');
+  return view('detail_card_page', compact('header_nav', 'detail_card', 'menu_cta', 'footer_links_top', 'footer_links_bottom'));
+})->name('detail_card_page');
 
 Route::get('/characters', function () {
     $header_nav = config('header-nav');

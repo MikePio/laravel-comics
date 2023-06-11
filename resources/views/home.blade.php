@@ -17,7 +17,7 @@
 
                   {{-- * CARDS DINAMICHE --}}
                   @foreach ($comics_cards as $comics_item)
-                  <a href="{{ route('detail_card', ['slug' => $comics_item['slug']] ) }}">
+                  <a href="{{ route('detail_card_page', ['slug' => $comics_item['slug']] ) }}">
                       <div class="card col">
                         <img src="{{ $comics_item['thumb'] }}" alt="{{ $comics_item['series'] }}">
                         <div>{{ $comics_item['series'] }}</div>
