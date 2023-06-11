@@ -17,12 +17,12 @@
 
                   {{-- * CARDS DINAMICHE --}}
                   @foreach ($comics_cards as $comics_item)
-
-                    <div class="card col">
-                      <img src="{{ $comics_item['thumb'] }}" alt="{{ $comics_item['series'] }}">
-                      <div>{{ $comics_item['series'] }}</div>
-                    </div>
-
+                  <a href="{{ route('detail_card', ['slug' => $comics_item['slug']] ) }}">
+                      <div class="card col">
+                        <img src="{{ $comics_item['thumb'] }}" alt="{{ $comics_item['series'] }}">
+                        <div>{{ $comics_item['series'] }}</div>
+                      </div>
+                    </a>
                   @endforeach
 
                     {{-- <!-- * cards in maniera dinamica TRAMITE PROPS-->
